@@ -5,7 +5,7 @@ var path = require('path');
 
 var app = express();
 
-var CLIENT_PATH = '/client_build';
+var CLIENT_PATH = '/client_src';
 
 app.get('/test',function (req, res) {
     res.sendFile(path.join(__dirname, CLIENT_PATH, '/test.html'));
